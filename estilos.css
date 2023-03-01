@@ -18,3 +18,12 @@
 .text1 {
     font-size: 3em;
 }
+
+.fundo {
+    position:relative;
+    width:100%;
+}
+
+.diz {
+    position:absolute;
+}
