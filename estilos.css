@@ -30,3 +30,26 @@
     left: 30px;
     color: yellow;
 }
+
+.capitais {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: space-around;
+    background-color: rgb(238, 248, 248);
+    padding: 50px;
+}
+
+.capitais > div {
+    /*  */
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #888888;
+    margin: 10px;
+}
+
+.capitais img {
+    border-radius: 20px 0 0 20px;
+    height: 100%;    
+}
