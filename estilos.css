@@ -73,20 +73,18 @@
 /**/
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
 }
 
-.circle {
+.container div {
     /*Circulo*/
     width: 200px;
     height: 200px;
     border-radius: 100px;
-    background-color: red;
+    /*background-color: red; -- passado para cada circulo e nao para todos*/
 }
 
-.circle .image {
+.container div .image {
     /*Propriedades da imagem*/
     clip-path: circle(50%);
     z-index: 2;
@@ -95,26 +93,53 @@
     height:auto; 
 }
 
-.circle p {
+.container div p {
     /* Propriedades do texto, neste caso simbolo */
     text-align: center;
     font-size: 100px;
     z-index: 1;
-    /*centrar texto no circulo*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
 }
 
-.circle:hover .image {
+.container div:hover .image {
     /* Imagem aparece após passar por cima com o rato */
     opacity: 1;
     z-index: 2;
 }
 
-.circle:hover p {
+.container div:hover p {
     /* texto ou icone desparece quando passa por cima com o rato */
     display: none;
 }
 
+.circulo {
+    position: absolute;
+    top: 0;
+}   
 
+.circulo1 {
+    left: 0;
+    background-color: red;
+}
+
+.circulo1:hover {
+    z-index: 1;
+}
+
+.circulo2 {
+    left: 150px;
+    background-color: blue;
+}
+
+.circulo2:hover {
+    z-index: 1;
+}
+
+.circulo3 {
+    left: 300px;
+    background-color: green;
+}
+
+.circulo3:hover {
+    z-index: 1;
+}
