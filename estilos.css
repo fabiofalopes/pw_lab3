@@ -70,7 +70,7 @@
 /* FIM -  Seccão caixas com as capitais */
 
 
-/**/
+/*Secção circulos conjunto de circulos*/
 
 .container {
     position: relative;
@@ -143,3 +143,7 @@
 .circulo3:hover {
     z-index: 1;
 }
+
+
+
+/* FIM - Secção circulos conjunto de circulos*/
