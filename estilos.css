@@ -1,9 +1,39 @@
 * {
-    font-family: 'Ubuntu', sans-serif;
+    /*font-family: 'Ubuntu', sans-serif;*/
+    font-family: 'Oswald', sans-serif;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
+
+header {
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background-color: blanchedalmond;
+    
+    z-index: 12;
+}
+
+header h1 {
+    text-align: left;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a { /* links */
+    padding: 0 1em;
+    text-decoration: none;
+    font-size: 1rem;
+    color: lightgray;
+  }
+
+/**/
 
 .elemento1 {
     width: 100vw;
@@ -18,6 +48,7 @@
 .fundo {
     position: relative;
     display: flex;
+    z-index: 0;
 }
 
 .imageText {
@@ -28,6 +59,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+/**/
 
 
 /* Seccão caixas com as capitais */
@@ -60,7 +93,8 @@
     width: 150px;
     background-color: white;
     padding: 20px;
-    border-radius: 0 20px 20px 0; /* arredonda 2º e 3º canto */
+    border-radius: 0 20px 20px 0;
+    /* arredonda 2º e 3º canto */
     /*centrar texto na caixa*/
     display: flex;
     justify-content: center;
@@ -88,9 +122,9 @@
     /*Propriedades da imagem*/
     clip-path: circle(50%);
     z-index: 2;
-    opacity:0; 
-    width:100%; 
-    height:auto; 
+    opacity: 0;
+    width: 100%;
+    height: auto;
 }
 
 .container div p {
@@ -98,7 +132,7 @@
     text-align: center;
     font-size: 100px;
     z-index: 1;
-    
+
 }
 
 .container div:hover .image {
@@ -115,7 +149,7 @@
 .circulo {
     position: absolute;
     top: 0;
-}   
+}
 
 .circulo1 {
     left: 0;
