@@ -1,5 +1,4 @@
 * {
-
     font-family: 'Ubuntu', sans-serif;
     box-sizing: border-box;
     padding: 0;
@@ -41,19 +40,29 @@
 
 .capitais > div {
     display: flex;
-    flex-direction: row;
+    /*justify-content: space-around;*/
     border-radius: 20px;
-    box-shadow: 5px 5px 5px #888888;
+    box-shadow: 5px 5px 15px #888888;
     margin: 10px;
-    flex: 1;
-}
-
-.capitais * p {
-    padding: 10px;
-    
 }
 
 .capitais img {
     border-radius: 20px 0 0 20px;
     height: 100%;
 }
+
+.capitais div div:last-child{
+    /* Selector indentifica os divs com o paragrafo com nome da capital
+    (ultimo div filho de cada div dentro do elemento com classe capitais) */
+
+    width: 150px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 0 20px 20px 0; /* arredonda 2º e 3º canto */
+
+    /*centrar texto na caixa*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
